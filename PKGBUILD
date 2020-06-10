@@ -1,6 +1,6 @@
 pkgname=neovim
 pkgver=0.4.3
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
 pkgdesc='Vim-fork focused on extensibility and usability'
 url='https://neovim.io/'
@@ -22,5 +22,5 @@ check() {
 
 package() {
   cd "${srcdir}/${pkgname}"
-  make CMAKE_INSTALL_PREFIX="${pkgdir}" install
+  make CMAKE_INSTALL_PREFIX="${pkgdir}/usr" install
 }
