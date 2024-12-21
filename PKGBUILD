@@ -1,5 +1,5 @@
 pkgname=neovim
-pkgver=0.10.2
+pkgver=0.10.3
 pkgrel=1
 arch=('x86_64')
 pkgdesc='Vim-fork focused on extensibility and usability'
@@ -7,7 +7,7 @@ url='https://neovim.io/'
 license=('APACHE')
 makedepends=('cmake' 'unzip' 'ninja' 'curl' 'gettext')
 source=("https://github.com/neovim/neovim/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
-sha1sums=('3d95312cad306bf45475773b7784d509a600e254')
+sha1sums=('d15ac10bcbbe64bf6803c985af3da736f33ca27d')
 
 build() {
   cd "${pkgname}-${pkgver}"
